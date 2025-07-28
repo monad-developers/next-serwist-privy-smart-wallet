@@ -12,11 +12,12 @@
     "@privy-io/react-auth": "^2.14.2",
     "@serwist/next": "^9.0.15",
     "next": "14.2.30",
+    "permissionless": "^0.2.52",
     "qrcode.react": "^4.2.0",
     "react": "^18",
     "react-dom": "^18",
-    "viem": "^2.31.2",
     "serwist": "latest",
+    "viem": "^2.31.2",
     "web-push": "3.6.7"
   },
   "devDependencies": {
