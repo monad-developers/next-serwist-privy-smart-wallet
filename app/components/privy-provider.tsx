@@ -2,6 +2,7 @@
 
 import { PrivyProvider as BasePrivyProvider } from "@privy-io/react-auth";
 import { monadTestnet } from "viem/chains";
+import SmartWalletProvider from "../hooks/useSmartWallet";
 
 export default function PrivyProvider({
   children,
@@ -27,7 +28,9 @@ export default function PrivyProvider({
         supportedChains: [monadTestnet],
       }}
     >
-      {children}
+      <SmartWalletProvider>
+        {children}
+      </SmartWalletProvider>
     </BasePrivyProvider>
   );
 }
