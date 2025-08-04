@@ -65,6 +65,9 @@ NEXT_PUBLIC_PRIVY_CLIENT_ID= # optional, you can leave this empty
 WEB_PUSH_EMAIL=user@example.com
 WEB_PUSH_PRIVATE_KEY=your_vapid_private_key
 NEXT_PUBLIC_WEB_PUSH_PUBLIC_KEY=your_vapid_public_key
+
+# Pimlico
+NEXT_PUBLIC_PIMLICO_BUNDLER_URL=your_pimlico_bundler_url
 ```
 
 > **Important**: Replace all placeholder values with your actual credentials. See the steps below for obtaining these values.
@@ -103,8 +106,6 @@ For full PWA functionality (including install prompts):
 ```bash
 npm run build && npm run start
 ```
-
-> **Note**: The install app button only works in production mode (`npm run build && npm run start`)
 
 ## 📱 PWA Features
 
