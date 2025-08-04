@@ -32,8 +32,8 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd next14-privy-serwist
+git clone https://github.com/monad-developers/next-serwist-privy-smart-wallet.git
+cd next-serwist-privy-smart-wallet
 ```
 
 ### 2. Install Dependencies
@@ -65,6 +65,9 @@ NEXT_PUBLIC_PRIVY_CLIENT_ID= # optional, you can leave this empty
 WEB_PUSH_EMAIL=user@example.com
 WEB_PUSH_PRIVATE_KEY=your_vapid_private_key
 NEXT_PUBLIC_WEB_PUSH_PUBLIC_KEY=your_vapid_public_key
+
+# Pimlico
+NEXT_PUBLIC_PIMLICO_BUNDLER_URL=your_pimlico_bundler_url
 ```
 
 > **Important**: Replace all placeholder values with your actual credentials. See the steps below for obtaining these values.
@@ -103,8 +106,6 @@ For full PWA functionality (including install prompts):
 ```bash
 npm run build && npm run start
 ```
-
-> **Note**: The install app button only works in production mode (`npm run build && npm run start`)
 
 ## 📱 PWA Features
 
@@ -187,7 +188,7 @@ To customize your push notification content, edit `app/notification/route.ts` an
 ## 🔧 Project Structure
 
 ```
-next14-privy-serwist/
+next-serwist-privy-smart-wallet/
 ├── app/
 │   ├── components/          # React components
 │   │   ├── InstallPWA.tsx  # PWA install prompt
